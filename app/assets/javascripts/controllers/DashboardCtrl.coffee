@@ -1,4 +1,4 @@
-angular.module('sampleApp').controller "DashboardCtrl", ['$scope', 'TodoList', ($scope, TodoList) ->
+angular.module('sampleApp').controller "DashboardCtrl", ($scope, TodoList) ->
 
   $scope.init = ->
     @listsService = new TodoList(serverErrorHandler)
@@ -16,4 +16,3 @@ angular.module('sampleApp').controller "DashboardCtrl", ['$scope', 'TodoList', (
 
   serverErrorHandler = ->
     alert("サーバーでエラーが発生しました。画面を更新し、もう一度試してください。")
-]
