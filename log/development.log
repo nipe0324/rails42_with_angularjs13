@@ -21459,3 +21459,205 @@ Completed 200 OK in 21ms (Views: 7.9ms | ActiveRecord: 1.6ms)
 
 
 Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-01-14 20:21:28 +0900
+
+
+Started GET "/dashboard" for ::1 at 2015-01-14 20:23:42 +0900
+Processing by TemplatesController#index as HTML
+  Rendered templates/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 410ms (Views: 409.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-e808e777f34f8969eae123f7141d86b2.css?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/application-f0254b77dd56498a6df6141991f5f9e9.css?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/application-25a5d5cbdaf57e3a0de3eaa1ee70e139.js?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/controllers/TodoListCtrl-0c50a858564ca6d38f1f08add357e6b5.js?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/todo_list-0bbda6902d1a3dcbe1159eeedf7ba9c7.css?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/jquery.turbolinks-051c63717f28dee8f54d3ecd892deff0.js?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/angular.min-189575d099ab45dc37cf39fcbe7deafb.js?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/angular-resource.min-9424b04e5f4a688ea74c1ba801671449.js?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/angular-route.min-2aed1d0d4032f1b3e5cb5e584990ec0f.js?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/ui-bootstrap-tpls-0.12.0.min-aa796321291bda1d4a7ceecbfd3b0e34.js?body=1" for ::1 at 2015-01-14 20:23:42 +0900
+
+
+Started GET "/assets/app-b6ec8e5bc30f3d6788bc40a832c110fa.js?body=1" for ::1 at 2015-01-14 20:23:43 +0900
+
+
+Started GET "/assets/services/TodoListService-a2ccefc0bf7414d38bdd9798eaec51a0.js?body=1" for ::1 at 2015-01-14 20:23:43 +0900
+
+
+Started GET "/assets/services/TodoService-d1a091a5489fada8beddc8dc4a3e6c04.js?body=1" for ::1 at 2015-01-14 20:23:43 +0900
+
+
+Started GET "/templates/dashboard.html" for ::1 at 2015-01-14 20:23:43 +0900
+Processing by TemplatesController#template as HTML
+  Parameters: {"path"=>"dashboard"}
+  Rendered templates/dashboard.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/todo_lists" for ::1 at 2015-01-14 20:23:43 +0900
+Processing by Api::TodoListsController#index as JSON
+  [1m[36mTodoList Load (0.3ms)[0m  [1mSELECT "todo_lists".* FROM "todo_lists"[0m
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-14 20:28:12 +0900
+Processing by TemplatesController#index as HTML
+  Rendered templates/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 161ms (Views: 160.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/todo_list-0bbda6902d1a3dcbe1159eeedf7ba9c7.css?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/application-f0254b77dd56498a6df6141991f5f9e9.css?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/bootstrap.min-e808e777f34f8969eae123f7141d86b2.css?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/jquery.turbolinks-051c63717f28dee8f54d3ecd892deff0.js?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/angular.min-189575d099ab45dc37cf39fcbe7deafb.js?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/angular-route.min-2aed1d0d4032f1b3e5cb5e584990ec0f.js?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/ui-bootstrap-tpls-0.12.0.min-aa796321291bda1d4a7ceecbfd3b0e34.js?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/angular-resource.min-9424b04e5f4a688ea74c1ba801671449.js?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/services/TodoService-d1a091a5489fada8beddc8dc4a3e6c04.js?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/services/TodoListService-a2ccefc0bf7414d38bdd9798eaec51a0.js?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/assets/app-b6ec8e5bc30f3d6788bc40a832c110fa.js?body=1" for ::1 at 2015-01-14 20:28:12 +0900
+
+
+Started GET "/templates/dashboard.html" for ::1 at 2015-01-14 20:28:12 +0900
+Processing by TemplatesController#template as HTML
+  Parameters: {"path"=>"dashboard"}
+  Rendered templates/dashboard.html.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/todo_lists" for ::1 at 2015-01-14 20:28:12 +0900
+Processing by Api::TodoListsController#index as JSON
+  [1m[35mTodoList Load (0.2ms)[0m  SELECT "todo_lists".* FROM "todo_lists"
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-01-14 20:28:12 +0900
+
+ActionController::RoutingError (No route matches [GET] "/assets/glyphicons-halflings-regular.woff"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (18.2ms)
+  Rendered /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (8.1ms)
+  Rendered /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (90.0ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.ttf" for ::1 at 2015-01-14 20:28:13 +0900
+
+ActionController::RoutingError (No route matches [GET] "/assets/glyphicons-halflings-regular.ttf"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/nipe/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (35.3ms)
