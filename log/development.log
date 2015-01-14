@@ -21385,3 +21385,77 @@ Processing by Api::TodosController#update as JSON
   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
   Rendered text template (0.0ms)
 Completed 204 No Content in 8ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2015-01-14 20:21:26 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TemplatesController#index as HTML
+  Rendered templates/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1396ms (Views: 1384.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/controllers/DashboardCtrl-b6606d0ea5ea9ad2333c39b125b0e692.js?body=1" for ::1 at 2015-01-14 20:21:27 +0900
+
+
+Started GET "/assets/application-324bd0afce7b1c9594308d761a7b57fa.js?body=1" for ::1 at 2015-01-14 20:21:27 +0900
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-14 20:21:27 +0900
+
+
+Started GET "/assets/todo_list-0bbda6902d1a3dcbe1159eeedf7ba9c7.css?body=1" for ::1 at 2015-01-14 20:21:27 +0900
+
+
+Started GET "/assets/application-f0254b77dd56498a6df6141991f5f9e9.css?body=1" for ::1 at 2015-01-14 20:21:27 +0900
+
+
+Started GET "/assets/bootstrap.min-e808e777f34f8969eae123f7141d86b2.css?body=1" for ::1 at 2015-01-14 20:21:27 +0900
+
+
+Started GET "/assets/jquery.turbolinks-051c63717f28dee8f54d3ecd892deff0.js?body=1" for ::1 at 2015-01-14 20:21:27 +0900
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-14 20:21:27 +0900
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-14 20:21:28 +0900
+
+
+Started GET "/assets/angular.min-189575d099ab45dc37cf39fcbe7deafb.js?body=1" for ::1 at 2015-01-14 20:21:28 +0900
+
+
+Started GET "/assets/angular-resource.min-9424b04e5f4a688ea74c1ba801671449.js?body=1" for ::1 at 2015-01-14 20:21:28 +0900
+
+
+Started GET "/assets/angular-route.min-2aed1d0d4032f1b3e5cb5e584990ec0f.js?body=1" for ::1 at 2015-01-14 20:21:28 +0900
+
+
+Started GET "/assets/ui-bootstrap-tpls-0.12.0.min-aa796321291bda1d4a7ceecbfd3b0e34.js?body=1" for ::1 at 2015-01-14 20:21:28 +0900
+
+
+Started GET "/assets/app-b6ec8e5bc30f3d6788bc40a832c110fa.js?body=1" for ::1 at 2015-01-14 20:21:28 +0900
+
+
+Started GET "/assets/controllers/TodoListCtrl-b4091473a1a2722f02370c74e022e351.js?body=1" for ::1 at 2015-01-14 20:21:28 +0900
+
+
+Started GET "/assets/services/TodoListService-a2ccefc0bf7414d38bdd9798eaec51a0.js?body=1" for ::1 at 2015-01-14 20:21:28 +0900
+
+
+Started GET "/assets/services/TodoService-d1a091a5489fada8beddc8dc4a3e6c04.js?body=1" for ::1 at 2015-01-14 20:21:28 +0900
+
+
+Started GET "/templates/dashboard.html" for ::1 at 2015-01-14 20:21:28 +0900
+Processing by TemplatesController#template as HTML
+  Parameters: {"path"=>"dashboard"}
+  Rendered templates/dashboard.html.erb (0.8ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/todo_lists" for ::1 at 2015-01-14 20:21:28 +0900
+Processing by Api::TodoListsController#index as JSON
+  [1m[35mTodoList Load (0.7ms)[0m  SELECT "todo_lists".* FROM "todo_lists"
+Completed 200 OK in 21ms (Views: 7.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-01-14 20:21:28 +0900

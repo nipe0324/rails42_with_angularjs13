@@ -1,5 +1,5 @@
 # コントローラーを定義する。今はこのように記載すると覚えておけば良い。
-angular.module('sampleApp').controller "TodoListCtrl", ($scope, $routeParams, TodoList, Todo) ->
+angular.module('sampleApp').controller "TodoListCtrl", ['$scope', '$routeParams', 'TodoList', 'Todo', ($scope, $routeParams, TodoList, Todo) ->
 
   # 初期データを用意するメソッド
   $scope.init = ->
@@ -34,3 +34,4 @@ angular.module('sampleApp').controller "TodoListCtrl", ($scope, $routeParams, To
 
   serverErrorHandler = ->
     alert("サーバーでエラーが発生しました。画面を更新し、もう一度試してください。")
+]
