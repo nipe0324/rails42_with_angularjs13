@@ -15,3 +15,6 @@ angular.module('sampleApp').factory 'Todo', ($resource, $http) ->
 
     update: (todo, attrs) ->
       new @service(todo: attrs).$update {id: todo.id}, (-> null), @errorHandler
+
+    all: (params)->
+      @service.query(params, (-> null), @errorHandler)

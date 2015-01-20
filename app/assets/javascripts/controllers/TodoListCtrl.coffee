@@ -9,6 +9,17 @@ angular.module('sampleApp').controller "TodoListCtrl", ($scope, $routeParams, To
     # データを取得する(GET /api/todo_lists/:id => Api::TodoLists#show)
     $scope.list = @todoListService.find($routeParams.list_id)
 
+  $scope.search = ->
+    # Ransackに対応したparamsを作成する
+    # description_cont => descriptionカラムが特定の値を含む(like句に変換される)
+    # completed_true   => completedカラムがtrueか
+    params = {
+      'q[description_cont]' : $scope.descriptionCont,
+      'q[completed_true]'   : $scope.completedTrue
+    }
+
+    # 検索結果を $scope.list.todos にセットする
+    $scope.list.todos = @todoService.all(params)
 
   $scope.addTodo = (todoDescription) ->
     # todoを追加する(POST /api/todo_lists/:todo_lsit_id/todos => Api::Todo#destroy)
