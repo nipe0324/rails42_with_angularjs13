@@ -43,6 +43,11 @@ angular.module('sampleApp').controller "TodoListCtrl", ($scope, $routeParams, To
   $scope.toggleTodo = (todo) ->
     @todoService.update(todo, completed: todo.completed)
 
+  $scope.listNameEdited = (listName) ->
+    @todoListService.update($scope.list, name: listName)
+
+  $scope.todoDescriptionEdited = (todo) ->
+    @todoService.update(todo, description: todo.description)
 
   serverErrorHandler = ->
     alert("サーバーでエラーが発生しました。画面を更新し、もう一度試してください。")
