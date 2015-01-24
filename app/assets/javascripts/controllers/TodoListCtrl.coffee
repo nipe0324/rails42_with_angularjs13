@@ -23,23 +23,19 @@ angular.module('sampleApp').controller "TodoListCtrl", ($scope, $routeParams, To
     $scope.list = @todoService.all(params, (res)-> $scope.totalTodos = res.totalTodos)
 
   $scope.addTodo = (todoDescription) ->
-    # todoを追加する(POST /api/todo_lists/:todo_lsit_id/todos => Api::Todo#destroy)
+    raisePositions($scope.list)
     todo = @todoService.create(description: todoDescription, completed: false)
-    # initメソッドで用意したtodosの一番最初にtodoを追加する
+    todo.position = 1
     $scope.list.todos.unshift(todo)
-    # todo入力テキストフィールドを空にする
     $scope.todoDescription = ""
 
 
-  # todoを削除するメソッド
   $scope.deleteTodo = (todo) ->
-    # todoをサーバーから削除する(DELETE /api/todo_lists/todo_list_id/todos/:id => Api::Todo#destroy)
+    lowerPositionsBelow($scope.list, todo)
     @todoService.delete(todo)
-    # todoをangularjsのlistデータから削除する(indexOfメソッドでtodoのindexを探し、spliceメソッドで削除する)
     $scope.list.todos.splice($scope.list.todos.indexOf(todo), 1)
 
 
-  # todoの完了カラムをON/OFFするメソッド
   $scope.toggleTodo = (todo) ->
     @todoService.update(todo, completed: todo.completed)
 
@@ -51,3 +47,36 @@ angular.module('sampleApp').controller "TodoListCtrl", ($scope, $routeParams, To
 
   serverErrorHandler = ->
     alert("サーバーでエラーが発生しました。画面を更新し、もう一度試してください。")
+
+
+  $scope.positionChanged = (todo) ->
+    @todoService.update(todo, target_position: todo.position)
+    updatePositions($scope.list)
+
+
+  $scope.sortListeners = {
+    orderChanged: (event) ->
+      newPosition   = event.dest.index + 1
+      todo          = event.source.itemScope.modelValue
+      todo.position = newPosition
+      $scope.positionChanged(todo)
+  }
+
+
+  raisePositions = (list) ->
+    angular.forEach list.todos, (todo) ->
+      todo.position += 1
+
+
+  lowerPositionsBelow = (list, todo) ->
+    angular.forEach todosBelow(list, todo), (todo) ->
+      todo.position -= 1
+
+
+  todosBelow = (list, todo) ->
+    list.todos.slice(list.todos.indexOf(todo), list.todos.length)
+
+
+  updatePositions = (list) ->
+    angular.forEach list.todos, (todo, index) ->
+      todo.position = index + 1

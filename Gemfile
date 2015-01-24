@@ -56,3 +56,4 @@ end
 
 gem 'ransack'
 gem 'kaminari'
+gem 'acts_as_list'

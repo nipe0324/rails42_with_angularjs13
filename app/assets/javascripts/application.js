@@ -19,5 +19,6 @@
 //= require angular-route.min
 //= require mk-editable-span.min
 //= require ui-bootstrap-tpls-0.12.0.min
+//= require ng-sortable.min
 //= require app
 //= require_tree .
